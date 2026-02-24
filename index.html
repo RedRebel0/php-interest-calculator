@@ -1,0 +1,25 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Interest Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-card">
+        <form action="result.php" method="post">
+            <h1>SI Calculator</h1>
+            <label for="P">Principal Amount (₹)</label>
+            <input type="number" name="P" id="P" required>
+            
+            <label for="R">Annual Rate (%)</label>
+            <input type="number" name="R" id="R" step="0.1" required>
+            
+            <label for="T">Time (Months)</label>
+            <input type="number" name="T" id="T" required>
+            
+            <div class="button-group">
+                <input type="submit" value="Get Result" class="btn btn-submit">
+                <input type="reset" value="Clear" class="btn btn-reset">
+            </div>
+        </form>
+    </div>
+</body>
