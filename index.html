@@ -9,13 +9,19 @@
 <body>
     <div class="calculator-card">
         <form action="result.php" method="post">
-            <h1>SI Calculator</h1>
+            <h1>Simple Interest Calculator</h1>
             
-            <label for="P">Principal Amount (₹)</label>
-            <input type="number" name="P" id="P" placeholder="e.g. 5000" required style="margin-bottom: 20px;">
+            <label>Select Currency</label>
+            <div class="currency-group">
+                <label class="currency-option"><input type="radio" name="currency" value="INR" checked> ₹ (INR)</label>
+                <label class="currency-option"><input type="radio" name="currency" value="USD"> $ (USD)</label>
+            </div>
+
+            <label for="P">Principal Amount</label>
+            <input type="number" name="P" id="P" placeholder="e.g. 1000" required style="margin-bottom: 20px;">
             
             <label for="R">Annual Rate (%)</label>
-            <input type="number" name="R" id="R" step="0.1" placeholder="e.g. 7.5" required style="margin-bottom: 20px;">
+            <input type="number" name="R" id="R" step="0.1" placeholder="e.g. 5.0" required style="margin-bottom: 20px;">
             
             <label for="T">Time Period</label>
             <div class="time-row">
